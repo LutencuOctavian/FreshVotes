@@ -6,7 +6,6 @@ import java.io.Serializable;
 
 @Embeddable
 public class VoteId implements Serializable {
-
     private static final long serialVersionUID=620229445639364177L;
     private Users userId;
     private Feature featureId;

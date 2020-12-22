@@ -1,13 +1,10 @@
 package com.freshvotes.fresh.model;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
 @Table(name="coment")
-public class Coment implements Serializable {
-
-
+public class Coment {
     @Column(name="composeKey")
     private ComentId pk;
 

@@ -1,11 +1,10 @@
 package com.freshvotes.fresh.model;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
 @Table(name="users")
-public class Users implements Serializable {
+public class Users  {
     @Id
     @Column(name="id")
     @GeneratedValue(strategy =GenerationType.IDENTITY )
@@ -15,7 +14,7 @@ public class Users implements Serializable {
     private String userName;
 
     @Column(name="password", length = 50)
-    private String pssword;
+    private String password;
 
     @Column(name="first_name")
     private String firstName;
@@ -37,11 +36,11 @@ public class Users implements Serializable {
     }
 
     public String getPssword() {
-        return pssword;
+        return password;
     }
 
     public void setPssword(String pssword) {
-        this.pssword = pssword;
+        this.password = pssword;
     }
 
     public String getFirstName() {

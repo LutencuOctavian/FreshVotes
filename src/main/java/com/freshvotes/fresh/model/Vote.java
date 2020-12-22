@@ -1,12 +1,10 @@
 package com.freshvotes.fresh.model;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
 @Table(name="vote")
-public class Vote implements Serializable {
-
+public class Vote  {
     @Column(name="composeKey")
     private VoteId pk;
 

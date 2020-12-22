@@ -1,11 +1,10 @@
 package com.freshvotes.fresh.model;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
 @Table(name="feature")
-public class Feature implements Serializable {
+public class Feature {
     @Id
     @Column(name="id")
     @GeneratedValue(strategy =GenerationType.IDENTITY )
